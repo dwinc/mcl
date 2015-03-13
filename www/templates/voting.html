@@ -1,0 +1,31 @@
+<ion-view view-title="Voting" hide-back-button="true">
+  <ion-content class="content-voting">
+      
+      <ion-list class="list-custom">
+          
+          <ion-item class="voting-info">
+              <div class="row">
+                  <div class="col-xs-2">
+                      <i class="ion-ios-information-outline" style="font-size: 28px;"></i>
+                  </div>
+                  <div class="col-xs-10">
+                      <strong>Interaction during the presentations</strong><br />
+                      When the speaker asks you to vote, please select the corresponding question and select your answer.
+                  </div>
+              </div>
+          </ion-item>
+          
+          <ion-item ng-repeat="question in questionsList" data-toggle="collapse" data-target="#voting{{ question.id }}" nav-clear>
+                {{ question.title }}
+                <div class="collapse" id="voting{{ question.id }}">
+                    <br />
+                    <div class="list" >
+                        <div ng-repeat="answer in question.answers" class="item">{{ answer.title }}</div>                        
+                    </div>
+                </div>
+            </ion-item>
+          
+      </ion-list>
+      
+  </ion-content>
+</ion-view>

@@ -1,0 +1,62 @@
+<ion-view title="{{navTitle}}" class="header-home">
+    <ion-content>
+      
+        <div class="home-image" style="background-image: url('img/home.jpg');">
+            <div class="news-item-content">
+                <div class="news-item-title gradient">
+                    <div class="news-item-text">
+                        16 Days, 3 hours and 12 minutes<br />
+                        <span class="home-event-title">{{ data.title }}, 26 March 2015</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="home-menu">
+            <div class="row">
+                <div class="col-xs-7 bg-schedule home-menu-left" ui-sref="app.schedule">
+                    <i class="icon ion-android-time"></i>
+                    <span class="home-menu-text">Event Schedule</span>
+                </div>
+                <div class="col-xs-5 bg-news home-menu-right" ui-sref="app.news">
+                    <span class="home-menu-text">News</span>
+                        <i class="icon ion-android-phone-portrait"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-5 bg-info home-menu-left" ui-sref="app.info">
+                    <i class="icon ion-android-clipboard"></i>
+                    <span class="home-menu-text">Info</span>
+                </div>
+                <div class="col-xs-7 bg-speakers home-menu-right" ui-sref="app.speakers">
+                    <span class="home-menu-text">Speakers</span>
+                    <i class="icon ion-android-person"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-7 bg-map home-menu-left" ui-sref="app.map">
+                    <i class="icon ion-android-pin"></i>
+                    <span class="home-menu-text">Event Map</span>
+                </div>
+                <div class="col-xs-5 bg-voting home-menu-right" ui-sref="app.voting">
+                    <span class="home-menu-text">Voting</span>
+                    <i class="icon ion-android-hand"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 bg-favs home-menu-left home-menu-full" ui-sref="app.favs">
+                    <i class="icon ion-android-favorite-outline"></i>
+                    <span class="home-menu-text">Personal Schedule</span>
+                </div>
+            </div>
+        </div>
+      
+        <div class="home-social">
+            <i class="icon ion-social-facebook"></i>
+            <i class="icon ion-social-twitter"></i>
+            <i class="icon ion-social-linkedin"></i>
+            <i class="icon ion-social-youtube"></i>
+        </div>
+      
+    </ion-content>
+</ion-view>

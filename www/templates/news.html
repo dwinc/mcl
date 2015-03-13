@@ -1,0 +1,18 @@
+<ion-view view-title="News" hide-back-button="true">
+    <ion-content class="content-news">
+      
+        <ion-list class="list-news">
+
+            <ion-item ng-repeat="news in newsList" nav-clear style="background-image: url('{{ news.thumbnail }}');" class="news-item">
+                <div class="news-item-content">
+                    <div class="news-item-title gradient">
+                        <a class="news-item-text" ui-sref="app.newsitem">{{ news.title }}</a>
+                    </div>
+                </div>
+            </ion-item>
+            
+        </ion-list>
+          
+    
+    </ion-content>
+</ion-view>

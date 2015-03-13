@@ -1,0 +1,291 @@
+/* Side menu */
+
+.item-sidemenu {
+    border: none;
+}
+
+.item-sidemenu .item-content {
+    color: #fff;
+    font-size: 28px;
+    padding: 12px;
+}
+
+
+
+/* main content */
+
+.mcl-content {
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.menu-content {
+    box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.15);
+}
+
+.pink {
+    color: #d35557!important;
+}
+
+.pinkBorder {
+    border-left: 5px solid #d35557!important;
+}
+
+/* Headers */
+
+.bar-header {
+    border: none!important;
+}
+
+.header-schedule .title, .header-schedule .ion-navicon,
+.header-news .title, .header-news .ion-navicon, 
+.header-newsitem .title, .header-newsitem .ion-navicon,
+.header-info .title, .header-info .ion-navicon,
+.header-speakers .title, .header-speakers .ion-navicon,
+.header-map .title, .header-map .ion-navicon,
+.header-voting .title, .header-voting .ion-navicon,
+.header-favs .title, .header-favs .ion-navicon, .back-button
+{
+    color: #fff!important;
+}
+
+.item-home .item-content {
+    background-color: #333;
+}
+
+.bg-home        { background-color: #ffffff!important; }  
+.bg-schedule    { background-color: #74bddf!important; }
+.bg-news        { background-color: #66aac9!important; }
+.bg-info        { background-color: #6ea256!important; }
+.bg-speakers    { background-color: #7ab05f!important; }
+.bg-map         { background-color: #edc132!important; }
+.bg-voting      { background-color: #edad33!important; }
+.bg-favs        { background-color: #d35557!important; }
+
+.header-home .bar-header {
+    background-color: #fff!important;
+}
+.content-schedule, .header-schedule .bar-header,
+.item-schedule .item-content, .search-schedule
+{
+    background-color: #74bddf!important;
+}
+.content-news, .header-news .bar-header, .header-newsitem .bar-header,
+.item-news .item-content 
+{
+    background-color: #66aac9!important;
+}
+.content-info, .header-info .bar-header,
+.item-info .item-content
+{
+    background-color: #6ea256!important;
+}
+.content-speakers, .header-speakers .bar-header,
+.item-speakers .item-content
+{
+    background-color: #7ab05f!important;
+}
+.content-map, .header-map .bar-header,
+.item-map .item-content
+{
+    background-color: #edc132!important;
+}
+.content-voting, .header-voting .bar-header,
+.item-voting .item-content
+{
+    background-color: #edad33!important;
+}
+.content-favs, .header-favs .bar-header,
+.item-favs .item-content, .search-favs
+{
+    background-color: #d35557!important;
+}
+
+/* Search bar */
+
+.search-schedule .item-input-wrapper, .search-favs .item-input-wrapper {
+    background-color: rgba(0,0,0,0.1);
+}
+.search-mcl .button-clear {
+    color: #fff!important;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff!important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff!important;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #fff;
+}
+
+/* Home */
+
+.home-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40%;
+    width: 100%;
+}
+
+.home-menu .row {
+    margin-bottom: 5px;
+}
+
+.home-menu-left {
+    margin-left: -1px!important;
+}
+
+.home-menu-right {
+    margin-right: -1px!important;
+    text-align: right;
+} 
+
+.home-menu-full {
+    margin-left: -1px!important;
+    margin-right: -1px!important;
+}
+
+.home-menu .col-xs-5, .home-menu .col-xs-7, .home-menu .col-xs-12 {
+    padding: 15px;
+    margin: 0px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.home-menu-text {
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.home-menu .icon {
+    font-size: 24px;
+}
+
+.home-event-title {
+    color: #74bddf;
+}
+
+.home-social {
+    color: #74bddf;
+    font-size: 32px;
+    text-align: center;
+    padding: 12px;
+}
+
+.home-social .icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* List items */
+
+.row {
+    padding: 0px;
+    margin: 0;
+}
+
+.col-xs-9, .col-xs-10 {
+    padding: 0px;
+}
+
+.col-xs-3, .col-xs-2 {
+    padding-left: 0px;
+}
+
+.item p {
+    white-space: normal;
+    font-size: 14px;
+}
+
+.list-custom .item {
+    white-space: normal;
+    padding: 12px;
+}
+
+.list-schedule .item {
+    border-left: 6px solid #DDD;
+}
+
+.list-news .item {
+    white-space: normal;
+    border: none;
+}
+
+.list-item-left {
+    font-size: 14px;
+    color: #999;
+}
+
+.list-item-icons i {
+    font-size: 32px;
+    margin-left: 3px;
+    color: #999;
+}
+
+.news-item {
+    height: 230px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+
+.news-item-content {
+    position: relative;
+    height: 100%;
+}
+
+.news-item-title {
+    position: absolute;
+    bottom: 0;
+    padding: 12px;
+    color: #fff;
+    width: 100%;
+}
+
+.news-item-text {
+    position: relative;
+    width: inherit;
+    overflow:hidden;
+        word-wrap:break-word;
+}
+
+.gradient {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.80) 57%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(57%,rgba(0,0,0,0.80))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.80) 57%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.80) 57%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.80) 57%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.80) 57%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.speaker-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.scroll{height: 100%;}
+
+.voting-info {
+    background-color: #eee;
+}
+
+.title-image {
+    margin-top: 8px;
+    height: 27px;
+}

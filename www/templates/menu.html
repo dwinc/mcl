@@ -1,0 +1,47 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable" ng-class="{'header-home': $state.is('app.home'), 'header-schedule': $state.is('app.schedule'), 'header-news': $state.is('app.news'), 'header-newsitem' : $state.is('app.newsitem'), 'header-info': $state.is('app.info'), 'header-speakers': $state.is('app.speakers'), 'header-map': $state.is('app.map'), 'header-voting': $state.is('app.voting'), 'header-favs': $state.is('app.favs')}">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+       
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" width="50" height="52">
+    
+    <ion-content>
+      <ion-list>
+        <ion-item class="item-sidemenu item-home" nav-clear menu-close href="#/app/home">
+            <i class="icon ion-android-home"></i>
+        </ion-item>
+        <ion-item class="item-sidemenu item-schedule" nav-clear menu-close href="#/app/schedule">
+          <i class="icon ion-android-time"></i>
+        </ion-item>
+        <ion-item class="item-sidemenu item-news" nav-clear menu-close href="#/app/news">
+          <i class="icon ion-android-phone-portrait" style="margin-left: 3px;"></i>
+        </ion-item>
+        <ion-item class="item-sidemenu item-info" nav-clear menu-close href="#/app/info">
+          <i class="icon ion-android-clipboard"></i>
+        </ion-item>
+        <ion-item class="item-sidemenu item-speakers" nav-clear menu-close href="#/app/speakers">
+          <i class="icon ion-android-person"></i>
+        </ion-item>
+        <ion-item class="item-sidemenu item-map" nav-clear menu-close href="#/app/map">
+          <i class="icon ion-android-pin" style="margin-left: 2px;"></i>
+        </ion-item>
+        <ion-item class="item-sidemenu item-voting" nav-clear menu-close href="#/app/voting">
+          <i class="icon ion-android-hand"></i>
+        </ion-item>
+        <ion-item class="item-sidemenu item-favs" nav-clear menu-close href="#/app/favs">
+          <i class="icon ion-android-favorite-outline"></i>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

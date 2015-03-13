@@ -1,0 +1,18 @@
+<ion-view view-title="Info" hide-back-button="true">
+  <ion-content class="content-info">
+      
+      <ion-list class="list-custom">
+          <ion-item data-toggle="collapse" ng-repeat="info in infoPages" data-target="#info{{ info.id }}" nav-clear>
+                <strong>{{ info.title }}</strong><br />
+                {{ info.subtitle }}
+                
+                <div class="collapse" id="info{{ info.id }}">
+                    <br />
+                    <span ng-bind-html="info.content"></span>
+                </div>
+            </ion-item>
+          
+      </ion-list>
+      
+  </ion-content>
+</ion-view>

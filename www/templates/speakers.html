@@ -1,0 +1,33 @@
+<ion-view view-title="Speakers" hide-back-button="true">
+  <ion-content class="content-speakers">
+      
+      <ion-list class="list-custom">
+            
+            <ion-item ng-repeat="speakers in speakersList" data-toggle="collapse" data-target="#speaker{{ speakers.id }}" nav-clear>
+                <div class="row">
+                    <div class="col-xs-3 list-item-left">
+                        <div class="speaker-profile" style="background-image: url('{{ speakers.image_url }}')"></div>
+                    </div>
+                    <div class="col-xs-9">
+                        <strong>{{ speakers.name }}</strong><br />
+                        {{ speakers.subtitle }}
+                    </div>
+                </div>
+                <div class="collapse" id="speaker{{ speakers.id }}">
+                    <div class="row">
+                        <div class="col-xs-3 list-item-icons">
+                            <br />
+                            <i class="icon ion-android-favorite-outline"></i>
+                        </div>
+                        <div class="col-xs-9">
+                            <br />
+                            <span ng-bind-html="speakers.about"></span>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+           
+        </ion-list>
+      
+  </ion-content>
+</ion-view>

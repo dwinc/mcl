@@ -1,0 +1,45 @@
+<ion-view view-title="Event Schedule" hide-back-button="true" cache-view="false">
+  
+    <ion-content class="content-favs">
+        <div class="bar bar-header item-input-inset search-favs search-mcl">
+            <label class="item-input-wrapper">
+                <i class="icon ion-ios7-search placeholder-icon"></i>
+                <input type="search" placeholder="Search">
+            </label>
+            <button class="button button-clear">
+                Cancel
+            </button>
+        </div>  
+     
+        <ion-list ng-repeat="(key, value) in favsList | groupBy: 'date'" class="list-custom list-schedule">
+            <div class="item item-divider">{{ key }}</div>
+            <ion-item ng-repeat="fav in value" data-toggle="collapse" data-target="#fav{{ fav.id }}" nav-clear>
+                <div class="row">
+                    <div class="col-xs-3 list-item-left">
+                        {{ fav.startTime }}<br />{{ fav.endTime }}
+                    </div>
+                    <div class="col-xs-9">
+                        <strong>{{ fav.title }}</strong><br />
+                        {{ fav.subtitle }}
+                    </div>
+                </div>
+                <div class="collapse" id="fav{{ fav.id }}">
+                    <div class="row">
+                        <div class="col-xs-3 list-item-icons">
+                            <br />
+                            <i ng-click="setFav({{ fav }})" class="icon ion-android-favorite-outline pink"></i>
+                        </div>
+                        <div class="col-xs-9">
+                            <br />
+                            <span ng-bind-html="fav.info"></span>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+           
+        </ion-list>
+          
+        
+     
+  </ion-content>
+</ion-view>
